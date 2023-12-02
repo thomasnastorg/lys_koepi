@@ -7,6 +7,7 @@ app.get('/', (req, res) => {
   const html = fs.readFileSync(__dirname+"/html/index.html", "utf-8");
   res.send(html);
 });
+app.use("/css", express.static(__dirname+"/css/"));
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
