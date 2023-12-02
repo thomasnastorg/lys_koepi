@@ -5,3 +5,5 @@ npm install
 pour start 
 
 npm test
+ou
+nodemon //pour update automatique
